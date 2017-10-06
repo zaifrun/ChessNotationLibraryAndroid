@@ -1,8 +1,9 @@
 # ChessNotationLibraryAndroid
-A chess notation library (.aar) for supporting chess notation in 56 languages. 
+
+A chess notation library (.aar) for supporting chess notation in 56 languages on Android
 
 
-This is Version 1.0 (see version history at the bottom of this document)
+This is Version 1.1 (see version history at the bottom of this document)
 
 Description and purpose of this library:
 
@@ -18,20 +19,18 @@ You can use the library for what you want. It would be nice to receive an email 
 You can also write to that email to suggest features or point out problems or if you know the symbols used for non-supported languages.
 
 
-Setting up the library in your Android Project:
+Setting up the library in your Android Project in 3 easy steps:
 
-1. Copy the .aar file into the /libs folder in Android Studio (that folder already exists - shift to the project view
-in Android Studio and go in under your project name and you will see this folder).
+1 Go to the menu : File->New->New Module and then Choose "Import jar/aar package" and 
+  click the file opener button at the far-rigth in the dialogue. 
+  Then navigate to the .aar file you have downloaded from this repository. 
 
-2. Now go to the menu : File->New->New Module and then Choose "Import jar/aar package" and click the file opener button at the far-rigth
-in the dialogue. Then navigate to the .aar file you copied into your project in step 1. 
-
-3. Now go to your build.gradle for you main app module (not the project gradle)
+2. Now go to your build.gradle for you main app module (not the project gradle)
    and put the following under the depencies {} section:     
    compile project(':chessnotationlibrary')
 
 
-4. Compile your project again.
+3. Compile your project again just to make sure.
 
 That's it!
 
@@ -40,9 +39,10 @@ Overview of the library
 All the methods and constants are static in this class, so no need to create an object of the type ChessNotation.
 
 The library has the following methods:
-void init(Context context) : this sets up the library for use.
-String getPiece(int piece) : This gets a string representing the piece in the currently selected language.
-void setCurrentLanguage(String lang): This overrides the autodetected language. You can use the constants
+void init(Context context) //this sets up the library for use.
+String getPiece(int piece) //This gets a string representing the piece in the currently selected language.
+void setCurrentLanguage(String lang) // This overrides the autodetected language. You can use the constants
+void forceLanguageUpdate() //this forces the library to read the current language again from the phone settings
 
 Using the library:
 
@@ -125,4 +125,6 @@ Welsh
 
 Version History:
 1.0 First public release.
+1.1 Bug fix and add the forceLanguageUpdate() method to the library
  
+
