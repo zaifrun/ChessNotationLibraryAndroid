@@ -3,7 +3,7 @@
 A chess notation library (.aar) for supporting chess notation in 56 languages on Android
 
 
-This is Version 1.1 (see version history at the bottom of this document)
+This is Version 1.2 (see version history at the bottom of this document)
 
 Description and purpose of this library:
 
@@ -130,5 +130,6 @@ Welsh
 Version History :
 1.0 First public release.
 1.1 Bug fix and add the forceLanguageUpdate() method to the library
+1.2 Added broadcastreceiver in library to automatically detect language change.
  
 
