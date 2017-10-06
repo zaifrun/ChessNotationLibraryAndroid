@@ -127,7 +127,7 @@ Vietnamese
 Welsh
       
 
-Version History:
+Version History :
 1.0 First public release.
 1.1 Bug fix and add the forceLanguageUpdate() method to the library
  
