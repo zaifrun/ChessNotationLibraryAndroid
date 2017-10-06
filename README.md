@@ -39,9 +39,13 @@ Overview of the library
 All the methods and constants are static in this class, so no need to create an object of the type ChessNotation.
 
 The library has the following methods:
+
 void init(Context context) //this sets up the library for use.
+
 String getPiece(int piece) //This gets a string representing the piece in the currently selected language.
+
 void setCurrentLanguage(String lang) // This overrides the autodetected language. You can use the constants
+
 void forceLanguageUpdate() //this forces the library to read the current language again from the phone settings
 
 Using the library:
